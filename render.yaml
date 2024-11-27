@@ -3,6 +3,7 @@ services:
     plan: free
     name: esgi-node-app
     runtime: node
+    region: frankfurt
     repo: https://github.com/Tristangle/render
     buildCommand: "npm install"
     startCommand: "npm run start"
