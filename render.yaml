@@ -5,7 +5,7 @@ services:
     runtime: node
     repo: https://github.com/Tristangle/render
     buildCommand: ""
-    startCommand: "node app.js"
+    startCommand: "npm run start"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
