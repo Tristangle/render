@@ -4,7 +4,7 @@ services:
     name: esgi-node-app
     runtime: node
     repo: https://github.com/Tristangle/render
-    buildCommand: ""
+    buildCommand: "npm install"
     startCommand: "npm run start"
     envVars:
       - key: DATABASE_URL
@@ -15,3 +15,4 @@ services:
 databases:
   - name: esgi-node-app-db
     plan: free
+    region: frankfurt
