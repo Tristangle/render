@@ -1,17 +1,17 @@
 services:
   - type: web 
     plan: free
-    name: node-app
+    name: esgi-node-app
     runtime: node
     repo: https://github.com/Tristangle/render
-    buildCommand: "npm run build"
-    startCommand: "npm start"
+    buildCommand: ""
+    startCommand: "node app.js"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: node-app-db
+          name: esgi-node-app-db
           property: connectionString
 
 databases:
-  - name: node-app-db
+  - name: esgi-node-app-db
     plan: free
